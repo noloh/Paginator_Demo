@@ -14,7 +14,7 @@ class Paginator1 extends WebPage
 	{
 		parent::WebPage('Basic Usage of Paginator');
 		//Create Data::$Link to Demo databases
-		Data::$Links->DB1 = new DataConnection(Data::Postgres, 'demo_1', 'postgres');
+		Data::$Links->DB1 = new DataConnection(Data::Postgres, 'demo_1', 'demo_1');
 		//object where our paginated results will show
 		$resultsPanel = new Panel(10, 50, 200, 300);
 		$resultsPanel->BackColor = Color::Bisque;
